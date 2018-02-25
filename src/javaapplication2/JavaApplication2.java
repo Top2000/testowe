@@ -5,6 +5,8 @@
  */
 package javaapplication2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Michał
@@ -15,8 +17,16 @@ public class JavaApplication2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Witaj Świecie");
-        // TODO code application logic here
+       Scanner in = new Scanner(System.in);
+        int a;
+        int b;
+        System.out.println("Podaj imie ");
+        String name = in.nextLine();
+        System.out.println("Podaj rok");
+        String age = in.nextLine();
+        
+        System.out.println("Witaj użytkowniku " + name + " to będzie " + (age) + " rok twojego życia");
+        // TODO code application logic hereMich
     }
     
 }
